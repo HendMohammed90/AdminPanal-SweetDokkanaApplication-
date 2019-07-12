@@ -47,7 +47,7 @@ router.get('/details/:id',async(req, res)=>{
     const order = await Order.findById(req.params.id);
 
     if(!order) return res.status(404).send('Order with given ID is not found');
-    
+    console.log(order);
     console.log(order.product[0]["DateOfAdding"]);
     // res.send(order)
 

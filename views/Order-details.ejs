@@ -173,16 +173,14 @@
                                             <th >Image</th>
                                         </tr>
                                         <tbody>
-                                                console.log(order.product[0]["DateOfAdding"]);
+                                            order.product[0]["DateOfAdding"]
                                             <% order.product.forEach((PRO ,index)=>{ %>
                                                 <tr>
-                                                    <th scope="row"><%=PRO.DateOfAdding.toDateString() %></th>
-                                                    <%for (var i=0 ; i++ ;i< <%PRO.length%>) {%>
-                                                    <td scope="row"><%=P[i]["product"]%></td>
-                                                    <td scope="row"><%=P[i]["price"]%>$</td>
-                                                    <td scope="row"><%=P[i]["qyt"] %></td>
-                                                    <td scope="row"><img style="width: 50px ; height:50px" src="../../assets/imgs/<%=P[i]['image']%>"/></td>
-                                                    <% }) %>
+                                                    <th scope="row"><%=PRO.DateOfAdding.toDateString() %></th> 
+                                                    <td scope="row"><%=PRO.product%></td>
+                                                    <td scope="row"><%=PRO.price%>$</td>
+                                                    <td scope="row"><%=PRO.qyt %></td>
+                                                    <td scope="row"><img style="width: 50px ; height:50px" src="../../assets/imgs/<%=PRO.image%>"/></td>
                                                 </tr>
                                             <% }) %>
 
