@@ -1,3 +1,5 @@
 {
-    "jwtPrivateKey": "Sweets_jwtPrivateKey"
+    "jwtPrivateKey": "Sweets_jwtPrivateKey",
+    "db": "sweetDokkana_db"
+
 }
